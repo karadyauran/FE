@@ -22,18 +22,22 @@ body {
     width: 420px;
     height: 450px;
 
-    padding: 5px 20px;
+    position: relative;
+}
+
+.pop-up .content {
+    padding: 5px 40px;
 }
 
 .pop-up input, .pop-up button {
     display: block;
 }
 
+/* Как расположить этот символ более правильно, не используя костыли? */
 .pop-up .symbol {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
+    position: absolute;
+    right: 15px;
+    top: 10px;
     font-size: 30px;
 
     cursor: pointer;
@@ -42,7 +46,7 @@ body {
 .pop-up .title {
     font-size: 28px;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin: 40px 0 30px 0;
 }
 
 input {
