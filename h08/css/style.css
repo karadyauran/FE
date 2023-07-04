@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.users_container {
+    display: flex;
+}
+
+.users_container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px;
+    margin: 20px;
+
+    width: 200px;
+    height: 140px;
+
+    background-color: rgb(108, 226, 165);
+    border: 1.8px solid rgb(76, 157, 115);
+}
+
+.users_container div p:not(:last-child) {
+    margin-bottom: 7px;
+}
