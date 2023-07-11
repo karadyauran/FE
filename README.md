@@ -1,3 +1,3 @@
 # FE
 
-Homework
+Way of FE Development
