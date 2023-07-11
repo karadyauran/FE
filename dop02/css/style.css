@@ -1,0 +1,70 @@
+* {padding: 0; margin: 0;}
+
+.bg-image {
+    position: absolute;
+    background-image: url("https://www.jagdverband.de/sites/default/files/styles/pageimage/public/2020-01/Rolfes-Rothirsche-WR-12-0899_1920_0.jpg?itok=XrhLMmjQ");
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 1000px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.content {
+    position: relative;
+    z-index: 1; 
+    margin: 15px;
+}
+
+#h1 {                       /*1 zagolovok*/
+    text-align: center;
+}
+
+.i1 {                       /*vse IMG*/
+    width: 20%;
+}
+
+.d0 {                       /*1 block*/
+    display: inline;
+    text-align: left;
+    float: left;
+}
+
+.d1 {                       /*2block*/
+    display: inline;
+    text-align: center;
+}
+
+.d2 {                       /*3 block*/
+    display: inline;
+    text-align: right;
+}
+
+h2, .p0 {                   /*Zagolovki + text*/
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.p3, #i1 {                       /*text*/
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.p4, #i2 {                       /*text*/
+    float: center ;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.p5, #i3 {                       /*text*/
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#i1, #i2, #i3 {
+    display: inline;
+}
