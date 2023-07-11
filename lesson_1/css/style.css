@@ -1,0 +1,17 @@
+body {
+    background-color: dimgray;
+}
+
+img {
+    width: 400px;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, a, img {
+    border: 1px solid red;
+    text-align: center;
+}
+
+p {
+    color: lightsalmon;
+    margin: 40px;
+}

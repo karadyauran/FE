@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Agent 007</title>
+</head>
+<body>
+
+    <!-- 
+        action = url server app
+        method = get || post
+     -->
+    <form method="post">
+        <label for="firstname_input">Print your first name</label>
+        <input type="text" name="firstname" placeholder="First name" id="firstname_input">
+        <label for="lastname_input">and your last name</label>
+        <input type="text" name="lastname" placeholder="Last name" id="lastname_input">
+
+        <label for="about_me_textarea">About me</label>
+        <textarea name="about_me" id="about_me_textarea" cols="30" rows="10"></textarea>
+
+        <select name="profession">
+            <option disabled selected>Select your profession</option>
+            <option value="fe">Front End</option>
+            <option value="be">Back End</option>
+            <option value="qe">Tester</option>
+            <option value="gd">Game Dev</option>
+        </select>
+
+        <div>
+            <label for="beer_checkbox">Beer</label>
+            <input type="checkbox" name="beer" id="beer_checkbox">
+            <label for="tea_checkbox">Tea</label>
+            <input type="checkbox" name="tea" id="tea_checkbox">
+            <label for="coffee_checkbox">Coffee</label>
+            <input type="checkbox" name="coffee" id="coffee_checkbox">
+        </div>
+
+        <div>
+            <label for="beer_radio">Beer</label>
+            <input type="radio" name="drink" id="beer_radio" value="beer">
+            <label for="tea_radio">Tea</label>
+            <input type="radio" name="drink" id="tea_radio" value="tea">
+            <label for="coffee_radio">Coffee</label>
+            <input type="radio" name="drink" id="coffee_radio" value="coffee">
+        </div>
+
+        <button>Send</button>
+    </form>
+</body>
+</html>

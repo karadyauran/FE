@@ -1,0 +1,21 @@
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.products-container div {
+    margin: 10px;
+
+    width: 200px;
+    min-height: 100px;
+    background-color: cornsilk;
+    border: 2px solid rgb(201, 196, 175);
+
+    font-size: 18px;
+    padding: 5px;
+}

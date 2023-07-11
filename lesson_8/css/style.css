@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div p {
+    width: 300px;
+    margin: 20px 0;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.container .inner {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: rgb(255, 223, 223);
+    text-align: center;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+    /* Позиционирование relative */
+    /* position: relative; 
+    left: 125px; /*  В позиционировании используют чаще пиксели чем проценты */
+    /* top: 125px; */
+
+    /* Позиционирование absolute */
+    position: absolute;
+    /* bottom: 40px;
+    right: 15px; */
+}
+
+/* Практическое задание 1 */
+
+.task-1 .inner:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.task-1 .inner:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+.task-1 .inner:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+.task-1 .inner:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+/* Практическое задание 2 */
+
+.task-2 .inner:nth-child(1) {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.task-2 .inner:nth-child(2) {
+    top: 25px;
+    left: 25px;
+    z-index: 3;
+}
+
+.task-2 .inner:nth-child(3) {
+    top: 50px;
+    left: 50px;
+    z-index: 4;
+}
+
+.task-2 .inner:nth-child(4) {
+    top: 75px;
+    left: 75px;
+    z-index: 1;
+}
+
+.arrow-up {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 123, 123);
+    background-color: rgb(255, 223, 223);
+    font-size: 20px;
+    cursor: pointer;
+
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+
+    opacity: .8;
+}
+
+p {
+    width: 600px;
+    text-align: justify;
+    margin: 20px auto;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffc8c8;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 199;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav ul li {
+    cursor: pointer;
+}

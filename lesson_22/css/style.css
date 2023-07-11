@@ -1,0 +1,28 @@
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+}
+
+.numbers .card {
+    cursor: pointer;
+
+    width: 100px;
+    height: 60px;
+    background: #f2a0a0;
+    border: 1.5px solid #ae6f6f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 5px;
+}
+
+.numbers .active {
+    background: #a0f2a5;
+    border: 1.5px solid #79b77d;
+}

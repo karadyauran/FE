@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+ 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: #1ABC9C;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+
+    padding: 21px 70px;
+    position: fixed;
+}
+
+header .logo {
+    width: 101px;
+    height: 29px;
+    cursor: pointer;
+}
+
+header ul {
+    display: flex;
+    
+}
+
+header ul li {
+    margin-right: 20px;
+    font-size: 25px;
+    list-style: none;
+    cursor: pointer;
+}
+
+header .social-links img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+}
+
+nav .nav-img {
+    min-width: 756px;
+}
+
+nav .text {
+    font-size: 20px;
+    padding: 200px 68px;
+}
+
+nav .text .title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+main {
+    width: 100%;
+    height: 730px;
+    background: #DCFFEB;
+    display: flex;
+    flex-direction: column;
+
+    padding: 124px 64px;
+}
+
+.title-content {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+main .sections {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .sections .section{
+    background-image: url("../media/section-img.png");
+    width: 436.08px;
+    height: 376.65px;
+    position: relative;
+}
+
+main .sections .section .text-section {
+    position: absolute;
+    width: 100%;
+    height: 171px;
+    bottom: 0;
+    background: #00000058;
+    color: white;
+    padding: 28px 36px 10px 36px;
+}
+
+main .sections .section .text-section .title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    margin-bottom: 16px;
+}
+
+main .sections .section .text-section p {
+    font-size: 12px;
+} 
+
+footer {
+    padding: 124px 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+footer .contacts .contact {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+footer .contacts .contact img {
+    margin-bottom: 15px;
+}
+
+footer .contacts .contact .name {
+    margin-bottom: 25px;
+    color: #999999;
+}
+
+footer .contacts .contact .description {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+footer .contacts .contact .red {
+    color: #F7654A;
+}

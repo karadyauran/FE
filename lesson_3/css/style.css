@@ -1,0 +1,57 @@
+*{margin: 0; padding: 0;}
+
+body {
+    padding: 20px;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+ul{
+    list-style: disc;
+}
+
+p {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+}
+
+table tr td, table tr th{
+    padding: 5px;
+}
+
+.zebra-table, .zebra-table tr, .zebra-table td, .zebra-table th {
+    border: 1px solid black;
+}
+
+/* .zebra-table tr:nth-child(4n + 1){
+    background-color: rgb(126, 228, 130);
+}
+
+.zebra-table tr:nth-child(4n + 2){
+    background-color: rgb(223, 197, 132);
+}
+
+.zebra-table tr:nth-child(4n + 3){
+    background-color: rgb(207, 98, 115);
+}
+
+.zebra-table tr:nth-child(4n + 4){
+    background-color: rgb(135, 177, 236);
+} */
+
+.zebra-table tr:nth-child(even) td:nth-child(odd) {
+    background-color: rgb(223, 197, 132);
+}
+.zebra-table tr:nth-child(odd) td:nth-child(even) {
+    background-color: rgb(223, 197, 132);
+}

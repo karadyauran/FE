@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: beige;
+}
+
+form *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#firstname_input:focus,
+#lastname_input:focus,
+#about_me_textarea:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 0.5px 50px 3px rgb(197, 197, 100);
+    padding: 10px;
+}

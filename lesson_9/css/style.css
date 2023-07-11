@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    padding: 10px;
+}
+ 
+.btn, .btn_1 {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: red;
+    background-color: silver;
+}
+ 
+.btn:hover {
+    /* border: 1px solid red; */
+    background-color: red;
+    color: silver;
+}
+ 
+/* Используя псевдокласс сделайте так, чтобы при наведении на картинку она увеличивалась. (изменяйте значение width и/или height) 
+ */
+.img_animate {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+ 
+    /* animation */
+ 
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 0.5s; 
+    /* transition-timing-function: cubic-bezier(.07,-1.5,.86,1.75); */
+    /* one line */
+    /* transition: all 2s 0.5s; */
+    transition: all 2s 0.5s cubic-bezier(1,-0.87, 0, 2.4);
+    /* 
+    transition: width 2s 0.5s, height 1s 2.5s;
+    */
+}
+ 
+/*
+Используя псевдокласс hover и свойство transform сделайте так, чтобы при наведении на картинку появлялась тень и она делала полный оборот (360 градусов).
+*/
+/* pseudo-class */
+.img_animate:hover {
+    width: 800px;
+    height: 600px;
+    transform: rotate(360deg);
+    /* opacity: 0; */
+ 
+    /* x y размытие распространение цвет */
+    box-shadow: 0 0 20px 10px black;
+}
+ 
+.btn_1 {
+    transition: all 2s 0.5s cubic-bezier(1,-0.87, 0, 2.4);
+    /* transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-out;
+    transition-timing-function: linear; */
+}
+ 
+.btn_1:hover {
+    padding: 10px 15px;
+    background-color: red;
+    box-shadow: 0 0 20px 10px black;
+    color: silver;
+}
+ 
+ul {
+    margin-top: 15px;
+    padding-left: 40px;
+    list-style: none;
+}
+ 
+ul li::after {
+    /* content: "✽"; */
+    /* content: "Hello"; */
+    content: "";
+    margin-left: 7px;
+    background-color: blue;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+ 
+ul li::before {
+    /* content: "✽"; */
+    /* content: "Hello"; */
+    content: "";
+    margin-right: 7px;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+ 
+.img_box {
+    display: flex;
+}
+ 
+.img_container {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    position: relative;
+}
+ 
+.img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.img_container::after {
+    content: attr(data-count);
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.img_container:hover::after {
+    opacity: 1;
+}
+ 
+/* Доработать прошлый пример таким образом, чтобы в кружке был текст из data- атрибута. */
